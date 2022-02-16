@@ -104,7 +104,7 @@ def apiPost(url,body,resCode,headers,typeAPI,thread):
                 print(bcolors.OKBLUE + "\nUrl: "+url+"\n"+bcolors.OKCYAN+"Response: "+json.dumps(res.json())+bcolors.WARNING+"\nElapsed Time: "+str(res.elapsed)+"\n"+bcolors.OKGREEN+"Result: Passed")
                 totalPass+=1
             else:
-                print(bcolors.OKBLUE + "\nUrl: "+url+"\n"+bcolors.OKCYAN+"Response: "+json.dumps(res.json())+bcolors.WARNING+"\nElapsed Time: "+str(res.elapsed)+"\n"++bcolors.FAIL+"Result: Failed")
+                print(bcolors.OKBLUE + "\nUrl: "+url+"\n"+bcolors.OKCYAN+"Response: "+json.dumps(res.json())+bcolors.WARNING+"\nElapsed Time: "+str(res.elapsed)+"\nResponse Code: "+str(res.status_code)+"\n"+bcolors.FAIL+"Result: Failed")
                 totalFail+=1
         except Exception as err:
             print(bcolors.FAIL+'Other error occurred: '+str(err)+"\n")

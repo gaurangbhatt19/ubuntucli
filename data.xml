@@ -1,0 +1,28 @@
+<Trip TripId="${id}" StartNode="H506" VehicleNo="${VehicleNo}">
+    <Waypoints>
+        <Waypoint Name="Omer Enterprises " WaypointId="${WaypointId}" Sequence="1">
+            <Address AddressLine1="H No 17 2 598 1 Madannapet Mandi Madannapet" AddressLine2="Hyderabad Hyderabad" Pincode="500059" City="Hyderabad" State="Telangana" Country="India" Latitude="17.358196" Longitude="78.504632" PhoneNumber="1234567890" Landmark="500059"/>
+            <Labels>
+                <Label LabelId="KASDemoTote002" Type="Tote"/>
+                <Label LabelId="KASDemoTote001" Type="Tote"/>
+            </Labels>
+            <AssetsAlreadyAvailableAtWaypoint>
+                <Asset Count="0" Type="BagRegular"/>
+                <Asset Count="0" Type="BagBig"/>
+                <Asset Count="02" Type="ToteRegular"/>
+            </AssetsAlreadyAvailableAtWaypoint>
+            <Shipments>
+                <Shipment ShipmentNo="100173982" OrderNo="SPD-0000182199-20" OrderType="B2B" OrderClassification="Forward" PrepaidAmt="900" InvoiceNo="${invoice_id}" SlotStart="2020-06-15T02:30:00Z" SlotEnd="2020-06-15T14:30:00Z" EstimatedArrivalTime="2020-06-14T06:51:31.058Z" EstimatedDepartureTime="2020-06-14T06:51:31.058Z" OrderTotal="1026.12">
+                    <Lines>
+                        <Line No="1" ItemId="000000000491337398" ItemDescription="Sunfeast Yippee Magic Masala Instant Noodles 360 g" Quantity="17.0" UnitPrice="60.36" UnitOfMeasure="EACH">
+                            <Labels>
+                                <Label LabelId="KASDemoTote002" Quantity="12.0"/>
+                                <Label LabelId="KASDemoTote001" Quantity="5.0"/>
+                            </Labels>
+                        </Line>
+                    </Lines>
+                </Shipment>
+            </Shipments>
+        </Waypoint>
+    </Waypoints>
+</Trip>
